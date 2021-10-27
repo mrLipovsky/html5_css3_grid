@@ -24,6 +24,22 @@ body {
     height: 7vh;
 }
 
+@media (max-width: 768px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        margin:20px;
+    }
+
+    .header nav {
+        margin:20px;
+    }
+
+    .logo {
+        margin:20px;
+    }
+}
+
 .header img {
     height: 2vh;
 } 
@@ -114,6 +130,24 @@ section {
     display: grid;
     grid-auto-flow: column;
 }
+
+@media (max-width: 920px) {
+    section {
+        display: flex;
+        flex-direction: column;
+        margin:20px;
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        display: flex;
+        flex-direction: column;
+        margin:20px;
+    }
+
+}
+
 
 .section_one {
     margin-left:4rem;
@@ -307,7 +341,7 @@ section {
     border-radius: 5px;
     margin:10px;
     transition-duration: 0.8s;
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .rating {
@@ -337,14 +371,20 @@ footer {
     display:grid;
     grid-auto-flow: column;
     color:white;
-    margin:2rem 0 10rem 0;
+    margin:0 0 10rem 0;
     justify-content:space-around;
     align-items: center;
     font-size:25px;
 }
 
+@media (max-width: 768px) {
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
 footer P {
-    margin-bottom: 1rem;
     color:rgb(202, 148, 86);
 }
 
@@ -357,20 +397,43 @@ span {
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin: 1rem;
+    margin: 2rem;
+    /* padding: 3rem; */
 }
 
 .container_two {
     display: flex;
     flex-direction: column;
-    align-content: left;
-    margin: 1rem;
+    margin: 2rem;
+    /* padding: 3rem; */
+}
+
+
+
+.container_two div input, select{
+    width: 100px;
+    height: 30px;
+    margin: 5px;
+    color:white;
+    background-color: rgba(160, 159, 159, 0.109);
+    border-radius:10px;
+    border: none;
+}
+
+.container_two form div{
+    border: none;
 }
 
 .container_two h2:hover {
-    justify-content:center;
     transition-duration: 0.8s;
     transform: scale(1.2);
+}
+
+.container_two div button{
+    width: 200px;
+    height:40px;
+    border-radius:10px;
+    border: none;
 }
 
 hr{
