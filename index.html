@@ -17,16 +17,20 @@
     <nav>
         <ul>
             <li><a href="default.asp">Home</a></li>
-            <li><a href="news.asp">Menu</a></li>
-            <li><a href="contact.asp">Services</a></li>
-            <li><a href="about.asp">Shop</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="shop.html">Shop</a></li>
         </ul>
     </nav>
     <div class="search">
-        <input type="text" class="search_input" placeholder="Search... "> 
+        <form action="search.html">
+        <label for="results"></label>
+        <input type="text" id="results" value="results" class="search_input" placeholder="Search... "> 
         <p class="search_input_p">|</p>
-        <button class="search_input_b"> <img src="pictures/add-to-cart.svg" alt=""> </button>
+        <button class="search_input_b"> <img src="pictures/add-to-cart.svg" alt="cart"> </button>
+        </form>
     </div>
+</form>
 </div>
 
 <section>
@@ -34,7 +38,7 @@
         <h1>We provide <br> delivery within <br> 30 <span> minutes.</span> </h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         <div class="section_buttons">
-            <button><h2>Order Now</h2></button>
+            <button><a href="shop.html" class="button"><h2>Order Now</h2></a></button>
             <img src="pictures/play.svg" alt="play">
             <p>Order Process</p>
         </div>
@@ -54,11 +58,11 @@
                 <img src="pictures/cola.jpg" alt="cola">
                 <p>Cola ipsum</p>
                 <h3>Price $4</h3>
-                <button> <img src="pictures/add-to-cart.svg" alt=""></button>
+                <button><a href="shop.html" class="button"><img src="pictures/add-to-cart.svg" alt="cart"></a></button> 
             </div>
 
             <div class="delivery">
-                <button><img src="pictures/delivery.svg" alt="truck"></button>
+                <button><a href="shop.html" class="button"><img src="pictures/delivery.svg" alt="truck"></a></button>
                 <p>Delivery <br> in 30 min</p>
             </div>
 
@@ -70,11 +74,37 @@
         </div>
     </div>
 </section>
-
+<hr>
 <footer>
+    <div class="container_one">
     <p>What we Serve</p>
     <h2> Lorem Ipsum Lorem Ipsum Lorem Ipsum <br>
          Lorem Ipsum Lorem Ipsum </h2>
+    </div>
+    <div class="container_two">
+        <h2>ORDER</h2> 
+        <form action="shop.html">
+            <label for="Meno">Meno</label>
+            <input type="text" id="Meno" name="Meno" placeholder="hod to sem" required value="meno vole">
+            <br>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone">
+            <br>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="email vole">
+            <br>
+            <label for="pizza">Choose a pizza:</label>
+            <select id="pizza" name="pizza">
+                <option value="pizza 1">pizza 1</option>
+                <option value="pizza 2">pizza 2</option>
+                <option value="pizza 3">pizza 3</option>
+                <option value="pizza 4">pizza 4</option>
+            </select>
+            <br>
+            <button><h2>Order Now</h2></button>
+        </form>
+        </div>
+
 </footer>
 
 </body>
