@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url(/HTML_CSS/html5_css3/html5_css3_grid/pictures/background.jpg);
+    background-image: url(pictures/background.jpg);
     height: 100%; 
     width: 100%;
     max-width: 1600px;
